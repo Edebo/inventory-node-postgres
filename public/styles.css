@@ -1,0 +1,16 @@
+#myvideo {
+  width: 100%;
+}
+.hero {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  color: white;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+}
+
+.centered {
+  letter-spacing: 4px;
+}

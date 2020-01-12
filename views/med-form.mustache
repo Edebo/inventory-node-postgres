@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create Medicine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+
+      <div class="row">
+      <div class="col-md-12 ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">MedCare</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/meds">All drugs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+    
+    <form class="container my-4" action="/meds/add" method="post">
+    <h1>Form to add medicine</h1>
+     <div class="form-group">
+      <label for="name">Drug Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="please enter the name of the drug">
+    
+    </div>
+    <div class="form-group">
+      <label for="count">Drug count</label>
+      <input type="text" class="form-control" id="count" name="count" placeholder="how many of it exist">
+    
+    </div>
+    <div class="form-group">
+      <label for="brand">Brand name</label>
+      <input type="text" class="form-control" id="brand" name="brand" placeholder="Enter the maker of the drug">
+    
+    </div>
+    
+    
+    <button type="submit" class="btn btn-success">Add Drug</button>
+    </form>
+  </body>
+</html>
